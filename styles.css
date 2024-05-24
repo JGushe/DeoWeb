@@ -313,10 +313,10 @@ div #valores ul li{
 
 .footer-heart{text-align:center;font-family: open sans, sans-serif;}
 
-.footer-heart a{border-bottom: 1px solid orange;color: rgb(250, 180, 50);padding-bottom: .25em; text-decoration: none;}
-.footer-heart a{border-bottom: 1px solid orange;color: rgb(250, 180, 50);padding-bottom: .25em; text-decoration: none;}
+.footer-heart a{color: rgb(250, 180, 50);padding-bottom: .25em; text-decoration: none;}
 
 .footer-heart a:hover{color:rgb(248, 189, 78); 
+    border-bottom: 1px solid orange;
   background-position: bottom;
   background-size: 20%;
   padding-bottom: .3em;
