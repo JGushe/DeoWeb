@@ -23,9 +23,11 @@ header {
     justify-content: space-between;
 }
 
-.logo{
+.logo a{
     line-height: 0.6;
     display: flex;
+    text-decoration: none;
+    color: white;
 }
 
 .logo h2{
@@ -276,12 +278,6 @@ div #valores ul li{
 
 /*Fin del about us*/
 
-.servicios{
-    margin: 20px;
-    color: black;
-}
-
-
 /*Pie de Pagina*/
 
 footer {
@@ -304,8 +300,6 @@ footer a{
 
 footer a:hover{
     box-shadow: 0px 0px 35px rgba(46, 201, 206, 0.815);
-    /*transform: translateY(-3%);*/
     background-color: rgba(46, 201, 206, 0.699);
     transform:scale(1.01 , 1.01);
-
 }
