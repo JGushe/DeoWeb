@@ -4,11 +4,15 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: url(./img/background.png);
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(./img/background.png);
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
     cursor: default;
+}
+
+.spacingContainer {
+    padding: 0 10px;
 }
 
 
@@ -16,37 +20,46 @@ body{
 /*Encabezado*/
 header {
     display: flex;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.95);
     color: white;
     padding: 10px;
     text-align: center;
     justify-content: space-between;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
 .logo a{
     line-height: 0.6;
     display: flex;
     text-decoration: none;
+    align-items: center;
     color: white;
 }
 
 .logo h2{
     margin-left: 30px;
-    padding-top: 5%;
 }
 
 .logo img{
     float: left;
-    height: 100px;
+    height: 70px;
+    filter: invert()
 }
 
 nav{
-    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
 }
 
 nav a{
+    margin-left: 15px;
     display: inline;
-    margin: 20px;
     color: white;
     text-decoration: none;
 }
@@ -276,30 +289,37 @@ div #valores ul li{
     text-align: justify;
 }
 
+.card h3{
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 30px;
+    /* TODO: agregar una fuente que acepte font-weight */
+    font-weight: bolder;
+}
+
 /*Fin del about us*/
 
 /*Pie de Pagina*/
 
-footer {
-    background-color: #000000;
+.footer-heart{
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.95);
+    color: white;
+    padding: 20px 10px;
     text-align: center;
-    padding: 1%;
-    color: white;
+    justify-content: space-between;
 }
 
+.footer-heart{text-align:center;font-family: open sans, sans-serif;}
 
-footer a{
-    display: inline-block;
-    padding: 8px 16px;
-    background-color: rgba(46, 200, 206, 0.253);
-    text-decoration: none;
-    border-radius: 10px;
-    color: white;
-    transition: all 400ms ease;
-}
+.footer-heart a{border-bottom: 1px solid orange;color: rgb(250, 180, 50);padding-bottom: .25em; text-decoration: none;}
+.footer-heart a{border-bottom: 1px solid orange;color: rgb(250, 180, 50);padding-bottom: .25em; text-decoration: none;}
 
-footer a:hover{
-    box-shadow: 0px 0px 35px rgba(46, 201, 206, 0.815);
-    background-color: rgba(46, 201, 206, 0.699);
-    transform:scale(1.01 , 1.01);
-}
+.footer-heart a:hover{color:rgb(248, 189, 78); 
+  background-position: bottom;
+  background-size: 20%;
+  padding-bottom: .3em;
+  text-decoration: none;}
+
+.emoji{vertical-align: middle;}
