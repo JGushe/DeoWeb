@@ -1,5 +1,5 @@
 body{
-    font-family: 'Lucida Console', monospace;
+    font-family: sans-serif;
     background-color: #ffffff;
     margin: 0;
     padding: 0;
@@ -14,8 +14,6 @@ body{
 .spacingContainer {
     padding: 0 10px;
 }
-
-
 
 /*Encabezado*/
 header {
@@ -92,7 +90,6 @@ nav a{
     box-shadow: 0px 0px 5px #f7d462;
     background-color: rgb(255, 255, 255);
     transition: all 500ms ease;
-
 }
 
 #productos .prodserv .card:hover{
@@ -121,13 +118,53 @@ nav a{
     text-decoration: none;
     border-radius: 10px;
     margin-top: 10px;
-    color: white;
+    color: rgb(0, 0, 0);
+    border: 2px solid black;
+    font-size: 18px;
 }
+
+
+#productos .prodserv .card:hover {
+    box-shadow: 0px 0px 35px #ffc506;
+    transform: scale(1.01, 1.01);
+
+}
+
+#productos .prodserv .card:hover .cambiar-color {
+    color: red;
+}
+
+#productos .prodserv .card {
+    position: relative; 
+}
+
+#productos .prodserv .card .btn {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    padding: 8px 16px;
+
+}
+
+#productos .prodserv .card .texto {
+    padding-bottom: 15px;
+}
+
 /*Fin de productos y servicios*/
 
 /*Empresa como tal*/
 
+#empresa {
+    width: 100%;
+    max-height: 100vh;
+}
+
 #empresa .empresa{
+    height: 100%;
+    min-height: 600px;
+    max-height: 200vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding-top: 2%;
@@ -135,7 +172,7 @@ nav a{
 }
 
 #empresa .empresa img{
-    height: 600px;
+    max-height: 600px;
     padding-right: 50px;
     padding-top: 5%;
     transition: all 200ms ease;
@@ -149,8 +186,6 @@ nav a{
     background-color: rgba(0, 0, 0, 0.829);
     text-align: center;
     color:white;
-    max-height: 750px;
-
 }
 
 #empresa .empresa .card .texto{
