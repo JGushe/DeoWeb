@@ -31,19 +31,20 @@ header {
     display: flex;
     align-items: center;
     padding-left: 10px;
-}
-
-.logo a{
-    line-height: 0.6;
-    display: flex;
     text-decoration: none;
-    align-items: center;
     color: white;
+    font-size: 20px;
+    transition: all 500ms ease;
 }
 
-.logo h2{
-    margin-left: 30px;
+
+.logo:hover{
+    color:rgb(248, 189, 78); 
+    background-position: bottom;
+    background-size: 20%;
+    text-decoration: none;
 }
+
 
 .logo img{
     float: left;
@@ -60,8 +61,48 @@ nav{
 nav a{
     margin-left: 15px;
     display: inline;
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
+    transition: all 500ms ease;
+}
+
+nav a:hover{
+    color:rgb(248, 189, 78); 
+    border-bottom: 1px solid orange;
+    background-position: bottom;
+    background-size: 20%;
+    text-decoration: none;
+}
+
+
+.navegador{
+    display: flex;
+    background: rgba(0, 0, 0, 0.95);
+    justify-content: center;
+}
+
+.navegador a{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    transition: all 500ms ease;
+}
+
+.navegador a:hover{
+    color:rgb(248, 189, 78); 
+    border-bottom: 1px solid orange;
+    background-position: bottom;
+    background-size: 20%;
+    padding-bottom: .3em;
+    text-decoration: none;
+}
+
+.navegador ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.navegador ul li {
+    margin: 0 50px; /* Añade un poco de espacio entre los elementos de la lista */
 }
 
 
@@ -90,13 +131,13 @@ nav a{
     width: 400px;
     border-radius: 10px;
     text-align: center;
-    box-shadow: 0px 0px 5px #f7d462;
+    box-shadow: 0px 0px 5px #000000;
     background-color: rgb(255, 255, 255);
     transition: all 500ms ease;
 }
 
 #productos .container .card:hover{
-    box-shadow: 0px 0px 35px #ffc506;
+    box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.808);
 }
 
 #productos .card .texto{
